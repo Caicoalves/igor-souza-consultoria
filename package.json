@@ -1,0 +1,33 @@
+{
+  "name": "igor-souza-premium",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "video:studio": "remotion studio video/index.ts",
+    "video:render": "remotion render video/index.ts IgorAppMotion artifacts/igor-app-motion.mp4 --codec=h264 --crf=18",
+    "video:stills": "remotion still video/index.ts IgorAppMotion artifacts/igor-app-motion-poster.png --frame=390"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "framer-motion": "^12.23.12",
+    "gsap": "^3.13.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.521",
+    "@tailwindcss/vite": "^4.1.12",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.2",
+    "remotion": "^4.0.521",
+    "tailwindcss": "^4.1.12",
+    "typescript": "~5.8.3",
+    "vite": "^7.1.3"
+  }
+}

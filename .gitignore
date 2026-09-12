@@ -1,0 +1,7 @@
+.vercel/
+node_modules/
+dist/
+artifacts/
+output/
+.DS_Store
+*.tsbuildinfo
